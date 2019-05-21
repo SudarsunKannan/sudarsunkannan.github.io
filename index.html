@@ -13,9 +13,15 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://sudarsunkannan.github.io/poole.css">
-  <link rel="stylesheet" href="https://sudarsunkannan.github.io/syntax.css">
-  <link rel="stylesheet" href="https://sudarsunkannan.github.io/hyde.css">
+  <link rel="stylesheet" href="poole.css">
+  <link rel="stylesheet" href="syntax.css">
+  <link rel="stylesheet" href="hyde.css">
+  <!-- Custom styles for this template -->
+  <!--link rel="stylesheet" href="scrolling-nav.css"-->  
+    <!-- Bootstrap core CSS -->
+  <!--link href="bootstrap.min.css" rel="stylesheet"->
+
+
   <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface"> -->
 
   <!-- Icons -->
@@ -27,148 +33,302 @@
 </head>
 
   <body class="layout">  <!-- reverse -->
+
+
+
+<div class="navbar">
+  <a href="index.html#patents">Patents</a>
+  <a href="CV_sudarsun.pdf">CV</a>
+  <a href="index.html#service">Services</a>
+  <a href="index.html#teaching">Teaching</a>
+  <a href="index.html#pubs">Publications</a>  
+  <a href="index.html#projects">Recent Research</a>
+  <a href="index.html#overview">Overview</a>
+</div>
+
+
     <div class="sidebar">
+
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <p>
-      <img src="/public/roxana.jpg" alt="Sudarsun Kannan" />
+      <img src="Photo.jpg" alt="Sudarsun Kannan" height="260" width="180" align="middle"/>
       </p>
       <h1>Sudarsun Kannan</h1>
-      <p class="lead"> Postdoctoral Researcher, <br/>
-      Department of Computer Sciences, <br/>
-      University of Wisconsin-Madison <br/>
-      Email:  sudarsun@cs.wisc.edu<br/>
+      <p class="lead"> Assistant Professor, <br/>
+      Computer Science Department, <br/>
+      Rutgers University <br/>
+      Email: sudarsun.kannanATcs.rutgers.edu<br/>
+     Office: CoRE 313<br/>
 </p>
     </div>
-
-    <ul class="sidebar-nav">
-      <li class="sidebar-nav-item active">
-      <a href="/">Overview</a>
-      </li>
-          
-            <li class="sidebar-nav-item">
-            <a href="/01-research/">Research</a>
-            </li>
-          
-            
-            <li class="sidebar-nav-item">
-            <a href="/02-publications/">Publications</a>
-            </li>
-          
-           <li class="sidebar-nav-item">
-            <a href="/04-teaching/">Teaching</a>
-            </li>
-
-            <li class="sidebar-nav-item">
-            <a href="//roxanageambasu.github.io/public/geambasu_cv.pdf">CV</a>
-            </li>
-          
-            <li class="sidebar-nav-item">
-            <a href="/06-contact/">Contact</a>
-            </li>
-    </ul>
-
-    <!-- <p>Made with <a href="http://hyde.getpoole.com/">hyde</a>.</p> -->
   </div>
 </div>
 
-    <div class="content container">
-<p>I am a Postdoc at the CS department at the University of Wisconsin-Madison.
-I work with Prof. Andrea Arpaci-Dusseau and Prof. Remzi Arpaci-Dusseau       
-at the ADSL lab. I currently study OS and application data storage problems.
+<font size="3"> 
 
-I was a Ph.D. Student at the College of Computing, Georgia Tech. My thesis explored 
-methods to extend virtual memory support for heterogeneous memory technologies. 
-My advisers were Prof. Karsten Schwan and Prof. Ada Gavrilovska. 
+<div class="content container" id="overview">
 
-I am interested in Operating Systems, Computer Architecture, Storage, Distributed Systems, 
-and Hardware-Software interactions. My Ph.D. thesis and current work have focused on 
-problems at the intersection of hardware and software.</p> </div>
+<p><font>  I am an Assistant Professor at the<a
+    href=https://www.cs.rutgers.edu/> Rutgers University's CS department.</a> I
+  work on Operating Systems (OS) for large-scale datacenter and mobile systems
+  and their implications on Computer Architecture, Distributed Systems, and
+  High-performance Computing systems. More specifically, we are building systems
+  for efficiently managing memory and storage heterogeneity.
+</p>
+  
+<p><font size="3" color="red"> I am looking for talented (BS, MS, PhD) students to join my group at Rutgers!
+If you like hacking systems and application and interested in fundamental Operating Systems, Computer Architecture, 
+or distributed systems research, write me an email or stop by my office! </font></p>
 
-<!--h3 id="mypubs">Selected Publications [Complete List][Google Scholar]</h3-->
-  <div class="content container">
-      <div class="page">
-  <h3 class="page-title">Selected Publications [Complete List][Google Scholar]</h3>
-  <ul>
-    
-<font size="3">    
+<p>Before joining Rutgers, I was a postdoc at the University of
+Wisconsin-Madison's CS department advised by <a
+href="http://pages.cs.wisc.edu/~dusseau/">Prof. Andrea Arpaci-Dusseau</a> and
+<a href="http://pages.cs.wisc.edu/~remzi/">Prof. Remzi Arpaci-Dusseau</a>. I
+graduated from <a href="https://www.cc.gatech.edu/">College of Computing,
+Georgia Tech</a>, where I was advised by <a
+href="https://en.wikipedia.org/wiki/Karsten_Schwan">Prof. Karsten Schwan</a>
+and <a href="https://www.cc.gatech.edu/~ada/">Prof. Ada Gavrilovska</a>. I am
+extremely fortunate to haved worked with my four wonderful advisers at
+different stages of my research career.</p>
 
-<p> HeteroOS - OS design for heterogeneous memory management in datacenter.[paper][slides]  <br> 
-Sudarsun Kannan, Ada Gavrilovska, Vishal Gupta, Karsten Schwan  <br> 
-ISCA 2017 (To Appear)</p>  
-</li>  
+<!--p> I enjoy solving problems at the intersection of hardware
+and software. My research interests include operating systems, storage systems,
+computer architecture, distributed systems, and high-performance computing. In
+particular, my research interests focus on systems support for emerging heterogeneous 
+memory and storage technologies; as these technologies continue to evolve and converge, 
+it will be critical to revisit their software management. 
+I work on Operating Systems, Computer Architecture, Distributed Systems, 
+and High-performance computing (HPC). <br> <br></p-->
+
+<h4 id="projects"><br></h4>
+  <h4 class="page-title" id="projects">Recent Research
+<font size="4">
+</font></h4>
+ <b> NoveLSM </b> - Redesign of LSM-based key-value stores for NVMs [ATC '18] <a href= https://github.com/SudarsunKannan/lsm_nvm>[Code]</a></br> 
+ <b> DevFS </b> - Hardware-level file system design for direct storage access bypassing the OS [FAST '18] </br>
+<b> HeteroOS</b> - Hypervisor & OS support for heterogeneous memory management in data centers [ISCA '17] <a href=https://github.com/SudarsunKannan/appbench>[Benchmark]</a></br>
+<b> Unwritten SSD contracts</b> - Understanding the impact of hidden SSD contracts on applications [EuroSys '17] <a href=https://github.com/junhe/wiscsee>[Code]</a> </br>
+<b>pVM</b> - Virtual memory  design for exploiting NVM's large 
+capacity and fast storage [EuroSys '16].</br>
+
+<h4 id="teaching"><br></h4>
+  <h4 class="page-title" id="teaching">Teaching
+<font size="4">
+</font></h4>
+ <b> <a href= https://www.cs.rutgers.edu/~sk2113/course/cs519.html>CS 519 -
+     Operating Systems Theory</a> </b>
+
+
+<h4 id="services"><br></h4>
+  <h4 class="page-title" id="services">Recent Conference/Journal Services
+<font size="4">
+</font></h4>
+2019 - Program Committee <a href=https://www.usenix.org/conference/atc19>USENIX ATC 19</a> <br>
+2019 - Program Committee (ERC) <a href=https://iscaconf.org/isca2019/>ISCA 19</a> <br>
+2019 - Program Committee <a href=http://nvmw.ucsd.edu/>NVMW 2019</a> <br>
+2019 - Program Committee <a href=http://conferences.computer.org/IC2E/2019/>IC2E 2019</a> <br> 
+2018 - ACM Transaction on Storage (TOS) <br> 
+2018 - External Reviewer CCS 2018 <br>
+2018 - Reviewer - Computer Architecture Letters (CAL) <br> 
+2018 - Reviewer - IEEE Transactions on Parallel and Distributed Systems (TPDS) <br> 
+2017 - Program committee - 46th International Conference on Parallel Processing  (ICPP)  <br> 
+
+
+ <!--b> DevFS </b> - Hardware-level file system for direct storage
+access.
+access without compromising fundamental file system properties such as 
+integrity, crash cosistency, and security. </br>
+<b> HeteroOS </b> - Hypervisor and OS-level support for heterogeneous memory
+(e.g., NVM, 3D-DRAM) management in Virtualized data centers.</br>
+<br>  <b> Unwritten SSD contracts  </b> -  Defining previously unknown contracts
+(best practices) for using SSDs and understanding how applications and
+file systems comply/violate such contracts. </br>
+<br>  <b> pVM  </b> -  OS-level design to exploit NVM's large memory capacity and
+fast persistent storage benefits; pVM extends the OS virtual memory
+instead of a file system, and is cache- and TLB-efficient.<--/br>
+
+
+<!--/div>
+<div class="content container"-->
+
+<!--h4 id="mypubs">Recent Publications <font size="2"> [Complete List][Google Scholar] </font></h4-->
+  <!--div class="content container">
+      <div class="page"-->
+
+<h4 id="pubs"><br></h4>
+  <h4 class="page-title" id="pub">Recent Publications 
+<font size="4">
+<a href="pubs.html">[Complete List]</a>
+<a href="https://scholar.google.com/citations?user=rNfpty8AAAAJ&hl=en">[Google Scholar]</a>
+</font></h4>
+  <!--ul-->
+
+<p> File Systems as Processes. <br>
+Jing Liu, Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau, <u>Sudarsun Kannan</u> </br>
+<b> HotStorage 2019 </b> (accepted) <br>
+</p>
+
+<p> HeteroOS: OS Design for Heterogeneous Memory Management in Datacenters. <br>
+<u>Sudarsun Kannan</u>, Ada Gavrilovska, Vishal Gupta, Karsten Schwan  <br> 
+<b> ACM SIGOPS Operating Systems Review - Special Topics, 2019 </b> <a href="https://dl.acm.org/citation.cfm?id=3273985">[PAPER]</a><br>
+</p>
+
+<p> Redesigning LSMs for Nonvolatile Memory with NoveLSM. <br>
+ <u>Sudarsun Kannan</u>, Nitish Bhat, Ada Gavrilovska, Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau  <br> 
+<b> USENIX ATC 2018 </b> 
+</p>  
+
+<p> The Unwritten Contract of Solid State Drives. The 9th Non-Volatile Memories
+Workshop <br>
+Jun He, <u>Sudarsun Kannan</u>, Andrea C. Arpaci-Dusseau, Remzi H.
+Arpaci-Dusseau<br> 
+<b> NVMW 2018 </b>
+</p>
+
+<p> NVStream: Accelerating HPC Workflows with NVRAM-based Transport
+for Streaming Objects. <br>
+Pradeep Fernando, Ada Gavrilovska, <u>Sudarsun Kannan</u>, Greg Eisenhauer  <br> 
+<b> HPDC 2018 </b>
+</p>  
+
+
+<p> Designing a True Direct-Access File System. <br>
+<u>Sudarsun Kannan</u>, Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau  <br> 
+<b> USENIX FAST 2018 </b> 
+<br><a
+href="http://pages.cs.wisc.edu/~sudarsun/docs/devfs_fast18.pdf">[paper]</a>
+<a href="docs/devfs_kannan_fast18.pdf">[slides]</a> </b> <br>
+</p>  
+
+   
+<p> HeteroOS - OS design for heterogeneous memory management in datacenter. <br>
+<u>Sudarsun Kannan</u>, Ada Gavrilovska, Vishal Gupta, Karsten Schwan  <br> 
+<b> ISCA 2017 </b> <br>
+<a href="http://dl.acm.org/citation.cfm?id=3080245">[paper]</a>
+<a href="https://drive.google.com/open?id=0B68inwBuWTq7SjdRMi11S1lkWkE">[slides]</a> </b> <br> 
+</p>  
+
      
-<li>  
-<p> Finding Violations in the Unwritten Contract of Solid State Drives.[paper][slides]  <br> 
-Jun He, Sudarsun Kannan, Andrea Arpaci-Dusseau, and Remzi Arpaci-Dusseau  <br> 
-EuroSys 2017</p>  
-</li>  
+<!--p> The Unwritten Contract of Solid State Drives. <br>
+Jun He, <u>Sudarsun Kannan</u>, Andrea Arpaci-Dusseau, Remzi Arpaci-Dusseau  <br> 
+<b> EuroSys 2017</b>
+<br><a href="http://pages.cs.wisc.edu/~jhe/eurosys17-he.pdf">[paper]</a></b><br> 
+</p>  
 
-<li>  
-<p> OS Support for Heterogeneous Memory [Thesis]  <br> 
+<p> OS Support for Heterogeneous Memory <br>
 Advisers: Prof. Karsten Schwan & Prof. Ada Gavrilovska  <br> 
-Ph.D. Thesis</p>  
-</li>  
+<b> Ph.D. Thesis</b>
+<br> <a href="https://smartech.gatech.edu/handle/1853/55660">[Thesis]</a> </b> <br> 
+</p-->  
 
-<li>  
-<p> pVM - Persistent Virtual Memory for Efficient Capacity Scaling and Object Storage [paper][slides]  <br> 
-Sudarsun Kannan, Ada Gavrilovska, Karsten Schwan  <br> 
-EuroSys 2016</p>  
-</li>  
+<p> pVM - Persistent Virtual Memory for Efficient Capacity Scaling and Object Storage <br>
+<u>Sudarsun Kannan</u>, Ada Gavrilovska, and Karsten Schwan  <br> 
+<b> EuroSys 2016</b><br>
+<a href="http://dl.acm.org/citation.cfm?id=2901318.2901325">[paper]</a>
+<a href="https://drive.google.com/file/d/0B68inwBuWTq7WmRWT2JBdkpZYm8/view?usp=sharing">[slides]</a></b>
+</p>  
 
-<li>  
-<p> Energy Aware Persistence: Reducing Energy Overheads of Memory-based Persistence in NVMs [paper][slides]  <br> 
-Sudarsun Kannan, Moinuddin Qureshi, Ada Gavrilovska, Karsten Schwan  <br> 
-PACT 2016 </p>  
-</li>  
+<!--p> Energy Aware Persistence: Reducing Energy Overheads of Memory-based Persistence in NVMs <br> 
+<u>Sudarsun Kannan</u>, Moinuddin Qureshi, Ada Gavrilovska, and Karsten Schwan  <br> 
+<b> PACT 2016</b> 
+<br> <a href="http://dl.acm.org/citation.cfm?id=2967953">[paper]</a>
+<a href="https://drive.google.com/open?id=0B68inwBuWTq7di05VE9fMkgyTm8">[slides]</a></b><br> 
 
-<li>  
-<p> Phoenix: Memory Speed HPC I/O with NVM  <br> 
-Pradeep Fernando, Sudarsun Kannan, Ada Gavrilovska, Karsten Schwan  <br> 
-HiPC 2016</p>  
-</li>
+</p>  
 
-<li>  
-<p> Reducing the Cost of Persistence for Nonvolatile Heaps in End User Devices [paper][slides] <br> 
-Sudarsun Kannan, Ada Gavrilovska, Karsten Schwan  <br> 
-HPCA 2014</p>  
-</li>
+<p> Reducing the Cost of Persistence for Nonvolatile Heaps in End User Devices <br>
+<u>Sudarsun Kannan</u>, Ada Gavrilovska, and Karsten Schwan  <br> 
+<b> HPCA 2014</b>
+<br><a href="docs/HPCA14_persistcost.pdf">[paper]</a>
+<a href="docs/HPCA_Present_final_present.pptx">[slides]</a></b><br> 
+</p>  
 
-<li>  
-<p>Optimizing Checkpoints Using NVM as Virtual Memory. [paper]  <br> 
-Sudarsun Kannan, Ada Gavrilovska, Karsten Schwan, Dejan Milojicic  <br> 
-IPDPS 2013</p>  
-</li>
+<p> Optimizing Checkpoints Using NVM as Virtual Memory.  <br> 
+<u>Sudarsun Kannan</u>, Ada Gavrilovska, Karsten Schwan, and Dejan Milojicic  <br> 
+<b> IPDPS 2013</b>
+<br><a href="docs/IPDPS13_Checkpoint.pdf">[paper]</a></b><br>
+</p-->  
 
-<li>  
-<p> Cloud4Home -- Enhancing Data Services with @Home Clouds. [paper] 
-Sudarsun Kannan, Ada Gavrilovska, and Karsten Schwan  <br> 
-ICDCS 2011</p>  
-</li>
-</font>
-</ul>
-</div>     
+<!--/ul-->
+     
+<h5 id="teaching"><br></h5>
+<h4>Past Teaching</h4>
+<!--p>Head Teaching Assistant - CS 3210 (Spring '16) -  Introduction to Operating Systems <br> 
+Head Teaching Assistant - CS 4210/ CS8803 (Fall '11) - Advanced
+Operating Systems <br--> 
+<p> Spring 2017 - CS 736 - Advanced Operating Systems, Guest Lecturer,
+UW-Madison <br>
+Fall 2017 - CS 739 - Distributed Systems, Guest Lecturer, UW-Madison <br>
+Spring 2016 - CS 3210 - Undergraduate OS Introduction, Head Teaching
+Assistant, Georgia Tech <br>
+Spring 2015 - CS 3210 - Undergraduate OS Introduction, Guest
+Lecturer, Georgia Tech <br>
+Fall 2014 - CS 6210 - Advanced OS, Guest Lecturer, Georgia
+Tech <br>
+Fall 2013 - CS 6210 - Advanced OS, Guest Lecturer, Georgia
+Tech <br>
+Fall 2011 - CS 4210 - Graduate OS Introduction, Head Teaching Assistant, Georgia
+Tech <br>
+</p>
 
-<h3 id="Review">Conference & Journal Reviewing</h3>
-<p>2017 - Program committee - 46th International Conference on Parallel Processing  (ICPP)  <br> 
-2017 - Reviewer - Transactions on Computers (TOC)  <br> 
+
+<!--h5 id="service"><br></h5-->
+<h4 id="services">Past Conference/Journal Services</h4>
+2017 - Reviewer - IEEE Transactions on Computers (TC)  <br> 
 2017 - Shadow PC committee - Eurosys <br> 
 2017 - Science of Computer Programming <br>  
 2016 - Shadow PC committee - Eurosys <br> 
-2016 - Reviewer - Computer Architecture Letters <br> 
-2016 - Reviewer - Transactions on Computers (TOC) <br> 
-2014 - Reviewer - Transactions on Cloud<br> 
-2013 - Reviewer - Transactions on Cloud<br> 
+2016 - Reviewer - Computer Architecture Letters (CAL) <br> 
+2016 - Reviewer - IEEE Transactions on Computers (TC) <br> 
+2014 - Reviewer - IEEE Transactions on Cloud Computing (TCC) <br> 
+2013 - Reviewer - IEEE Transactions on Parallel and
+Distributed Systems (TPDS) <br> 
 </p>
 
-<h3 id="Review">Teaching</h3>
-<p>Head Teaching Assistant - CS 3210 (Spring '16) -  Introduction to Operating Systems <br> 
-Head Teaching Assistant - CS 4210/ CS8803 (Fall '11) - Advanced Operating Systems <br> 
+<h5 id="patents"><br></h5>
+<h4 id="patent">Patents</h4>
+<p>Checkpoint generation, <br>
+<u>Sudarsun Kannan</u>, Paolo Faraboschi, Moray McLaren, Dejan S Milojicic, 
+<a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20140214770.pdf">[Patent]</a></b><br>
+US Patent No. 13/755,664, 2013</p>
+
+
+<p>Active Non Volatile Memory Post Processing,
+<a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20130227194.pdf">[Patent]</a></b><br>
+<u>Sudarsun Kannan</u>, Dejan Milojicic, Vanish Talwar, HP Labs <br>
+US Patent No: 20,130,227,194</p>
+
+<p>System and Method for Installation and Management of Cloud-Independent Multi-Tenant Applications, 
+<a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20120047239.pdf">[Patent]</a></b><br>
+Donahue, James E., Ho, <u>Sudarsun Kannan</u>, Ricky, Gore, Pradnyesh S. <br>
+US Patent Application No: 2012/0047,239</p>
+
+<h5 id="tool"><br></h5>
+<h4 id="tools">Tools and softwares</h4>
+<p><a href="https://github.com/SudarsunKannan/appbench">Benchmark for
+Understanding Heterogeneous Memory impact</a></b><br>
+<p><a href="https://github.com/SudarsunKannan/Thermalthrottling">Memory throttler</a></b><br>
+<p><a href="https://github.com/SudarsunKannan/nvmalloc">NVM memory manager</a></b><br>
+<p><a href="https://github.com/SudarsunKannan/memlatency">Memory latency benchmark</a></b><br>
 </p>
+
+
+</div>
+
+</font>
+
+
 
       <div id="footer" style="font-size:medium">
 </div>
     </div>
+
+<footer>
+  <p>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+&emsp; &emsp; &emsp; &emsp; &emsp; Using website design from <a href="https://roxanageambasu.github.io">Prof. Roxana Geambasu </p>
+</footer>
+
   </body>
 </html>
   

@@ -45,6 +45,12 @@ html {
   }
 }
 
+div{
+  display:inline-block;
+  padding:0px;
+  margin-left:-5px;
+}
+
 
 /*
  * Sidebar
@@ -65,7 +71,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 17rem;
     text-align: left;
   }
 }
@@ -110,6 +116,7 @@ a.sidebar-nav-item:focus {
     position: absolute;
     right:  1rem;
     bottom: 4rem;
+    top: 1rem;
     left:   1rem;
   }
 }
@@ -126,17 +133,18 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 48rem) {
+/* Right margin*/
+@media (min-width: 55rem) {
   .content {
-    max-width: 38rem;
+    max-width: 50rem;
     margin-left: 20rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }
 
 @media (min-width: 64rem) {
   .content {
-    margin-left: 22rem;
+    margin-left: 20rem;
     margin-right: 4rem;
   }
 }
