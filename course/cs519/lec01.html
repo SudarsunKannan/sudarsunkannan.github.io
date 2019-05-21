@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>CS519: Operating System Theory</title>
+<meta charset="utf-8"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="../shower/styles/ribbon.css" rel="stylesheet"/>
+<style>
+section pre code {
+  line-height: 1.4 !important;
+  font-size: 20px !important;
+}
+.compact code {
+  line-height: 1.4 !important;
+  font-size: 16px !important;
+}
+</style>
+<script src="../shower/js/jquery-2.2.0.min.js"></script>
+</head>
+<body class="shower list">
+<header class="caption">
+<h1>CS3210: Design Operating Systems</h1>
+<p>Taesoo Kim</p>
+</header>
+<section class="slide" id="cover">
+<br/><br/><br/><br/>
+<h2>CS519: Operating System Theory</h2>
+<p> Sudarsun Kannan</p>
+<style>
+ #cover h2 {
+   /* margin:180px 0 0; */
+   color: #666;
+   text-align:center;
+   font-size:60px;
+   font-weight: bold;
+ }
+ #cover p {
+   margin:30px 0 0;
+   text-align:center;
+   font-style:italic;
+   font-size:40px;
+ }
+ </style>
+</section>
+
+<section class="slide level1" id="topics"><div>
+<h1>Topics:</h1>
+<ul>
+<li>What this course is about?</li>
+<li>Course administrivia.</li>
+<li>Computer Science Research Course.</li>
+<li>Overview of Operating Systems Research.</li>
+<li>Reading Research Papers</li>
+<li>Writing Research Papers</li>
+<li>Simple Quiz (<em>Not for Grading</em>)</li>
+</ul>
+</div></section>
+<section class="slide level1" id="course-administrivia"><div>
+<h1>Course administrivia:</h1>
+<ul>
+<li>Paper Reviews (10%) - Submit before each lecture</li>
+<li>Midterm (10%) and Finals (15%)
+<ul>
+<li>Discussions in the class, papers, homework problem</li>
+</ul></li>
+<li>Homeworks (30%)
+<ul>
+<li>Includes implementation and analysis</li>
+<li>Example: Implement a System Call and measure context switch cost</li>
+</ul></li>
+<li>Semester-long Project - 35%
+<ul>
+<li>Details shortly</li>
+</ul></li>
+<li>Extra Credits (Class participation) - 10%</li>
+</ul>
+</div></section>
+<section class="slide level1" id="semester-project"><div>
+<h1>Semester project:</h1>
+<ul>
+<li>The real meat of the course.</li>
+<li>The goals of the project are:
+<ul>
+<li>Let you try your hand at conducting systems research.</li>
+<li>Provide a lot of feedback on writing, posing a question, designing an experiment, presenting research.</li>
+<li>Help you become better systems researchers.</li>
+<li>About the size of a conference/workshop paper.</li>
+<li>May be completed in groups -- size of project should reflect the size of the group</li>
+</ul></li>
+</ul>
+</div></section>
+<section class="slide level1" id="semester-project-continued"><div>
+<h1>Semester project (continued):</h1>
+<ul>
+<li>Five phases</li>
+<li>Proposal (due 3rd week 09/19) - Start thinking, meeting me @ office hours</li>
+<li>Checkpoint 1</li>
+<li>Checkpoint 2</li>
+<li>Project Presentation and Final Paper</li>
+<li>Demo</li>
+</ul>
+</div></section>
+<section class="slide level1" id="why-is-designing-os-interesting"><div>
+<h1>Why is designing OS interesting?</h1>
+<ul>
+<li>Conflicting design goals and trade-offs
+<ul>
+<li>Efficient yet portable</li>
+<li>Powerful yet simple</li>
+<li>Isolated yet interactable</li>
+<li>General yet performant</li>
+</ul></li>
+<li>I want to know how applications use hardware resource</li>
+</ul>
+</div></section>
+<section class="slide level1" id="prerequisite"><div>
+<h1>Prerequisite</h1>
+<ul>
+<li>C programming</li>
+<li>CS 416 (OS Design) or CS 518 (Graduate version) or Computer Architecture</li>
+</ul>
+</div></section>
+<section class="slide level1" id="general-information"><div>
+<h1>General information</h1>
+<ul>
+<li>Please see course website for schedule, news, links to homeworks, and everything else.</li>
+<li>Web: <a class="uri" href="https://www.cs.rutgers.edu/~sk2113/course/cs519.html">https://www.cs.rutgers.edu/~sk2113/course/cs519.html</a></li>
+<li>Piazza: <a class="uri" href="https://piazza.com/class/jlfj3jldgkz370">https://piazza.com/class/jlfj3jldgkz370</a> (please register)</li>
+<li>Reference book: freely available online <a class="uri" href="http://pages.cs.wisc.edu/~remzi/OSTEP/">http://pages.cs.wisc.edu/~remzi/OSTEP/</a></li>
+</ul>
+</div></section>
+<section class="slide level1" id="office-hours"><div>
+<h1>Office hours</h1>
+<ul>
+<li>Monday 5pm @ CoRE 313</li>
+<li>No TA, so email me your questions or post on Piazza</li>
+</ul>
+</div></section>
+<section class="slide level1" id="class-structure"><div>
+<h1>Class structure</h1>
+<ul>
+<li>One or two papers per class</li>
+<li>Goal not to cover maximum papers but discuss important ideas</li>
+<li>Please read the paper before the class and submit the reviews!</li>
+</ul>
+<p>[comment]: &lt;&gt; <span class="citation" data-cites="img">@img</span>(img/lab-commenting.png)</p>
+</div></section>
+<section class="slide level1" id="class-policy"><div>
+<h1>Class policy</h1>
+<ul>
+<li>Late day
+<ul>
+<li><mark>Five</mark> days of grace period (All four homeworks combined)</li>
+<li>Manage your grace periods wisely!</li>
+</ul></li>
+<li>No cheating
+<ul>
+<li>Cheating vs. collaboration</li>
+<li>Write the name(s) of your sources</li>
+</ul></li>
+</ul>
+</div></section>
+<section class="slide level1" id="high-level-intro"><div>
+<h1>High-level Intro</h1>
+<ul>
+<li>Hardware trends</li>
+<li>What is an operating system?
+<ul>
+<li>Challenges</li>
+<li>Goal</li>
+<li>Role</li>
+</ul></li>
+</ul>
+</div></section>
+<section class="slide level1" id="micro-processor-trends-cpu"><div>
+<h1>Micro-processor trends: CPU</h1>
+<ul>
+<li>by David A. Patterson and John L. Hennessy (2013)</li>
+</ul>
+<p style="text-align:center;margin:0"><img src="img/cpu-growth.png" style="width:80%"/></p>
+</div></section>
+<section class="slide level1" id="projecting-micro-processor-trends"><div>
+<h1>Projecting micro-processor Trends</h1>
+<ul>
+<li>by Chuck Moore (2012)</li>
+</ul>
+<p style="text-align:center;margin:0"><img src="img/35y-cpu-trend:amd11.png" style="width:65%"/></p>
+</div></section>
+<section class="slide level1" id="memory-trends"><div>
+<h1>Memory trends</h1>
+<ul>
+<li>by Onur Mutlu</li>
+</ul>
+<p style="text-align:center;margin:0"><img src="img/memorytrend.jpg" style="width:80%"/></p>
+</div></section>
+<section class="slide level1" id="what-does-an-os-do"><div>
+<h1>What does an OS do?</h1>
+<ul>
+<li>Virtualizes (gives illusion of private resources)</li>
+<li>Manages resources</li>
+<li>Acts as a library</li>
+</ul>
+</div></section>
+<section class="slide level1" id="challenges-in-operating-systems"><div>
+<h1>Challenges in operating systems</h1>
+<ul>
+<li>Portability</li>
+<li>Performance</li>
+<li>Reliability</li>
+<li>Security</li>
+</ul>
+</div></section>
+<section class="slide level1" id="challenges-in-practical-operating-systems"><div>
+<h1>Challenges in (practical) operating systems</h1>
+<p>e.g. Mac OSX, Windows, Linux</p>
+<ul>
+<li>Legacy (compatibility)</li>
+<li>Implementation</li>
+<li>Business</li>
+</ul>
+</div></section>
+<section class="slide level1" id="role-of-an-os"><div>
+<h1>Role of an OS?</h1>
+<ul>
+<li>Manage hardware resources on behalf of mutliple applications</li>
+</ul>
+</div></section>
+<section class="slide level1" id="goal-of-an-ideal-os"><div>
+<h1>Goal of an Ideal OS?</h1>
+</div></section>
+<section class="slide level1" id="goal-of-an-ideal-dream-os"><div>
+<h1>Goal of an Ideal (dream) OS?</h1>
+<ul>
+<li>Provide applications with near-hardware performance</li>
+<li>Do current OSes achieve the goal?</li>
+</ul>
+</div></section>
+<section class="slide level1" id="new-operating-systems-peter-j.-denning"><div>
+<h1>New operating systems (Peter J. Denning)</h1>
+<p style="text-align:center;margin:0"><img src="img/era.png" style="width:80%"/></p>
+</div></section>
+<section class="slide level1" id="future-hardware-trends"><div>
+<h1>Future hardware trends</h1>
+<p style="text-align:center;margin:0"><img src="img/futuretrend.png" style="width:80%"/></p>
+</div></section>
+<section class="slide level1" id="future-hardware-trends-1"><div>
+<h1>Future hardware trends</h1>
+<p style="text-align:center;margin:0"><img src="img/heterogeneity.png" style="width:80%"/></p>
+</div></section>
+<section class="slide level1" id="future-operating-systems-xkcd"><div>
+<h1>Future operating systems (xkcd)</h1>
+<ul>
+<li>Large scale: lots of cores, bigger memory, huge storage</li>
+<li>Small scale: dust?</li>
+<li>Heterogeneity</li>
+</ul>
+<p style="text-align:center;margin:0"><img src="img/xkcd-os.png" style="width: 100%"/></p>
+<p>What language is used for Linux, Windows, Mac OSX, FreeBSD, etc?</p>
+</div></section>
+<section class="slide level1" id="why-using-c-for-os-development"><div>
+<h1>Why using C for OS development?</h1>
+<ul>
+<li>Portability</li>
+<li>No runtime</li>
+<li>Direct hardware/memory access</li>
+<li>(decent) Usability</li>
+</ul>
+</div></section>
+<section class="slide level1" id="prep-quiz-the-c-programming-language"><div>
+<h1>Prep quiz: the C programming language</h1>
+<ul>
+<li>Relax! (Not for grading but for self-evaluation)</li>
+<li>&lt; 70% correct answers - time to revisit your programming skills</li>
+</ul>
+</div></section>
+<section class="slide level1" id="next-lecture"><div>
+<h1>Next lecture</h1>
+<ul>
+<li>Discussion of Exokernel Paper - Please submit reviews to<br/>
+</li>
+<li>Register <a href="https://piazza.com/class/jlfj3jldgkz370">Piazza</a></li>
+</ul>
+</div></section>
+<section class="slide level1" id="references-and-materials-used-from"><div>
+<h1>References and Materials used from</h1>
+<ul>
+<li><a href="https://tc.gtisc.gatech.edu/cs3210/2016/fall/">CS 3210</a></li>
+<li><a href="http://pages.cs.wisc.edu/~remzi/Classes/736/Fall2007/">UWisc CS 736</a></li>
+<li><a href="http://courses.cs.washington.edu/courses/cse451/15au/">UW CSE 451</a></li>
+<li><a href="http://ospp.cs.washington.edu/">OSPP</a></li>
+<li>Wikipedia</li>
+<li>The Internet</li>
+</ul>
+</div></section>
+<div class="progress"><div></div></div>
+<script src="../shower/js/shower.js"></script>
+</body>
+</html>
